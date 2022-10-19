@@ -1,0 +1,54 @@
+body {
+    background: #fff;
+    margin: 0px auto;
+    position: relative;
+    padding: 0px 10px;
+    max-width: 960px;
+}
+.content .intro-page .intro-1 {
+    padding: 0px 20px;
+    display: flex;
+}
+.content .intro-page .intro-top {
+    font-family: Arial;
+    font-size: 38px;
+    font-weight: bold;
+    color: black;
+    padding: 20px 55px;
+}
+.content .intro-page .intro-1 .container-1 {
+    width: 55%;
+    padding: 0px 5%;
+    text-align: justify;
+    font-size: 30px;
+}
+.content .intro-page .intro-1 .container-2{
+    width: 50%;
+    padding: 0px 5%;
+}
+.content .intro-page {
+    margin-top: 10%;
+}
+.content .intro-page .intro-2 {
+    padding: 50px 50px;
+    text-align: justify;
+    font-size: 30px;
+}
+.content .intro-page .intro-2 ul {
+    display: block;
+  
+}
+.content .intro-page .intro-3 img{
+    width: 750px;
+    padding: 0 12%;
+    
+} 
+.content .intro-page .intro-4  {
+    width: 50%;
+    display: flex;
+    padding: 0 12%;
+   
+}
+.content .intro-page .intro-5 {
+    padding: 0 25%;
+}
