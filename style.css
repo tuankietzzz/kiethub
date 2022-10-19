@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+    margin: 0px auto;
+    position: relative;
+    padding: 0px 10px;
+    max-width: 960px;
+}
+h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.content .intro-page .intro-top {
+    font-family: Arial;
+    font-size: 38px;
+    font-weight: bold;
+    color: black;
+}
+.content .intro-page .intro-1 .container-1 {
+    width: 55%;
+    padding: 0px 5%;
+    text-align: justify;
+    font-size: 30px;
+}
+
+.content .intro-page {
+    padding: 50px;
+    width: 960px;
+}
+.container {
+    font-weight: 600;
+    color: #de1a32;
+}
+ .love {
+    width: 688px;
+    margin: 20px 111px;
+    display: block;
+}
+p {
+    margin-bottom: 20px;
+}
