@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tab {
+    width: 1427.250px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+}
+.tab button {
+    width: 130px;
+    height: 48px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+}
+.tab button span {
+    color: gray;
+    font-size: 13.3333px;
+    font-weight: bolder;
+
+}
+.tabcontent {
+    background-color: rgb(164, 208, 247);
+    max-width: 1427.250px;
+    min-height: 800px;
+    display: grid;
+    grid-template-columns: 701px 701px ;
+    gap: 10px;
+}
+.container-items {
+    width: 701.625px;
+    height: 398.75px;
+    overflow: hidden;
+    border-radius: 5px;
+
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-top: 3px;
+}
+.container-items .image {
+    width: 702px;
+    height: 260px;
+    overflow: hidden;
+}
+.container-items img {
+    width: 701.625px;
+    height: 255.5px;
+    transform: scale(103%);
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+.items-bottom {
+    background-color: rgb(255, 255, 255);
+}
+.container-items .items-bottom .tag {
+    
+    padding: 0 6px;
+    height: 27.25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.container-items .items-bottom .tag .name {
+    font-size: 15px;
+    font-weight: bold;
+}
+.container-items .items-bottom .tag .new {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    background-color: #FFC800;
+}
+.container-items .items-bottom .info {
+    padding: 0 6px;
+    height: 60px;
+    font-size: 14px;
+}
+.container-items .items-bottom .price {
+    padding: 8px;
+    height: 44px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1px solid grey;
+}
+.container-items .items-bottom .price button {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: rgb(10, 128, 32);
+    height: 30px;
+    width: 114px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container-items:hover img {
+    transform: scale(120%);
+}
+.container-miniitems {
+    height: 400px;
+    border-radius: 5px;
+}
+.container-miniitems .image {
+    overflow: hidden;
+    cursor: pointer;
+}
+.container-miniitems, .container-miniitems .image, .container-miniitems img  {
+    width: 350px;
+    
+}
+.container-miniitems img {
+    transform: scale(103%);
+    transition: all 0.5s ease 0s;
+}
+.container-miniitems .items-bottom .tag {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.container-miniitems .items-bottom .tag .name {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.container-miniitems .items-bottom .tag .new {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    background-color: #FFC800;
+}
+.container-miniitems .items-bottom .info {
+    padding: 0 6px;
+    height: 60px;
+    font-size: 14px;
+}
+.container-miniitems .items-bottom .price {
+    padding: 5px;
+}
+.container-miniitems .items-bottom .price button {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: rgb(10, 128, 32);
+    height: 30px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}    
+.tabminicontent {
+    background-color: rgb(164, 208, 247);
+    max-width: 1427.250px;
+    min-height: 800px;
+    display: grid;
+    grid-template-columns: 351px 351px 351px 351px ;
+    gap: 5px;
+}
+.container-miniitems:hover img {
+    transform: scale(120%);
+}
