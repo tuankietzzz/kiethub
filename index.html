@@ -3,45 +3,193 @@
     <meta charset="UTF-8">
     <title>Bài 1</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://vtxicons.vercel.app/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <div class="content">
-        <div class="title">
-            <img src="img/1.1.jpg" alt="" width="960px">
-        </div>
-        <div class="intro-page">
-            <div class="intro-top">VỀ CHÚNG TÔI</div>
-            <div class="intro-1">
-                <div class="container-1">
-                    Pizza Hut là chuỗi nhà hàng pizza được yêu thích và lớn nhất thế giới, trực thuộc tập đoàn Yum! (www.yum.com). Pizza Hut tự hào hiện diện tại 100 quốc gia trên khắp thế giới từ tháng 4 năm 2016.
-                    <br><br><br>
-                    Sự kiện này đánh dấu một cột mốc ý nghĩa để minh chứng cho sự cam kết của nhãn hàng về chất lượng pizza hảo hạng và phong cách phục vụ chuyên nghiệp.
-                    <br><br><br>
-                    Pizza Hut có mặt tại Việt Nam từ năm 2006 với 100% vốn nước ngoài; và hiện đã phát triển hơn 110 nhà hàng với trên 3.000 nhân viên.
+    <div>
+        <div>
+            <header class="header">
+                <div class="header-1">
+                    <a href="#"><img src="img/logo.png" alt="Pizza Hut" height="50px"></a>
                 </div>
-                <div class="comtainer-2">
-                    <img src="img/1.2.jpg" alt="" width="350px">
-                    <br>
-                    <img src="img/1.3.jpg" alt="" width="350px" >
+                <div class="header-2">
+                    <i id="bell" class="far fa-bell"></i>
                 </div>
-            </div>
-            <div class="intro-2">
-                <ul>
-                    <li>Pizza Hut Việt Nam - nơi bạn được thỏa sức thể hiện chính mình với cơ hội hấp dẫn để phát triển cá nhân lẫn nghề nghiệp toàn diện!
-                    </li>
-                    <li>Chúng tôi tân tâm mang đến một môi trường làm việc thân thiện và chuyên nghiệp cho từng nhân viên, nỗ lực hoàn thiện giá trị “Cùng nhau hướng đến một Pizza Hut TUYỆT VỜI!”</li>
-                </ul>
-            </div>
-            <div class="intro-3"><img src="img/1.4.jpg" alt=""></div>
-            <div class="intro-4">
-                <div><img style="width: 370px;padding-right: 2%;" src="img/1.5.jpg" alt="" ></div>
-                <div><img style="width: 370px;padding-left: 2.5%;" src="img/1.6.jpg" alt="" ></div>
-            </div>
-            <div class="intro-5">
-                <div><img src="img/1.7.jpg" alt="" width="500px"></div>
-            </div>
+                <div class="header-3">
+                    <div>
+                        <button><span>EN</span></button>
+                    </div>
+                    <div class="member" onclick="openpage()"><button>
+                        <div><i id="alt" class="fa-solid fa-user red"></i></div>
+                        <div><span>Thành viên</span></div>
+                    </button>
+                    </div>
+                </div>
+                <div class="header-4">
+                    <button>
+                        <img src="img/track_your_order.svg" alt="">
+                        <span>Theo Dõi Đơn Hàng</span>
+                    </button>
 
+                </div>
+            </header>
+            <div class="login-dk" id="login">
+                <div class="login-item-dk">
+                    <div class="login-item">
+                        <img class="login-img" src="img/VN-1548x1557.jpg" height="480px"/>
+                        <form class="login-r">
+                            <p class="close" style="cursor:pointer;" onclick="closepage()"><img src="img/close.png" alt="" height="25px" width="30px"></p>
+                            <div class="login-text">
+                            <h1 style="color: #cb1c3b;">🍕🍕 WELCOME BACK!</h1>
+                            <p>BẠN ĐÃ LÀ THÀNH VIÊN HUT REWARDS! ĐĂNG NHẬP 
+                                <br>
+                                TRƯỚC KHI THANH TOÁN ĐỂ TÍCH ĐIỂM – ĐỔI PIZZA NHÉ!
+                            </p>
+                            </div>
+                            <div class="login-input">
+                            <label for="first-name">Email*
+                                <br><input style="font-size: 30px; margin-bottom: 20px; " type="text"required /></label>
+                                <br>
+                            <label class="login-password" for="last-name">Mật khẩu *
+                                <br><input style="font-size: 30px;"id="last-name"  type="text" required /></label>
+
+                        </form>
+                        <div class="login-a">
+                            <div  class="left">
+                                <label for="">
+                                    <input type="checkbox">
+                                    <span>Lưu mật khẩu</span>
+                                </label>
+                            </div>
+                            <div  class="right">
+                                <a  href="">Quên mật khẩu?</a>
+                            </div>
+                        </div>
+                        <button class="login-btn">ĐĂNG NHẬP</button>
+                        <div class="bottom">
+                            <span>
+                            Bạn chưa có tài khoản? <a href="">Đăng ký ngay</a>  hoặc tìm hiểu thêm về <a href="">Điều khoản và Quyền lợi Thành viên</a> 
+
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div>
+                <a href=""><img src="img/banner.jpg" alt="" width="100%"></a>
+            </div>
+            <div >
+                <div class="form" style="transform: translateY(-80px); text-align: center;">
+                    <div style="display: flex; width:100%; ">
+                        <button class="tab" onclick="change(true)" ><img src="img/1.1.gif" alt=""><span> Giao hàng tận nơi </span></button>
+                        <button class="tab" onclick="change(false)"><img src="img/1.2.png" alt="" height="28px">Mua mang về</button>
+                    </div> 
+                    <div id="tab-content">
+                        <input class="tab-input" placeholder="Vui lòng cho chúng tôi biết vị trí của bạn" style="width:80%;border-radius: 4px; border: 1px solid black;"/>
+                        <i class="fa-regular fa-map fa-lg"></i>
+            
+                    </div>
+                </div>
+            </div>
+            <section class="sec-2">
+                <div class="header-sec-2">
+                    <div class="line"></div>
+                    <h1 class="header-sec-2-text">Khuyễn mãi</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="list-img-sec-2">
+                    <img src="img/sec1.jpg" />
+                    <img src="img/sec2.jpg" />
+                </div>
+                <button class="button-sec-2">Xem menu</button>
+            </section>
+            <footer>
+                <div class="list-1">
+                    <div class="footer-item">
+                        <p class="text-f">MENU</p>
+                        <p class="text-f">Mua 1 được 3</p>
+                        <p class="text-f">Kids Box</p>
+                        <p class="text-f">My Box</p>
+                        <p class="text-f">LIMO & COMBO</p>
+                        <p class="text-f">Pizza</p>
+                    </div>
+                    <div class="footer-item">
+        
+                        <p class="text-f">VỀ CHÚNG TÔI</p>
+                        <p class="text-f">Giới Thiệu</p>
+                        <p class="text-f">Tầm Nhìn Của Chúng Tôi</p>
+                        <p class="text-f">Giá Trị Cốt Lõi</p>
+                        <p class="text-f">Vệ Sinh An Toàn Thực Phẩm</p>
+                    </div>
+                    <div class="footer-item">
+                        <p class="text-f">TÌM CỬA HÀNG</p>
+                        <p class="text-f">Miền Bắc</p>
+                        <p class="text-f">Miền Trung</p>
+                        <p class="text-f">Miền Nam</p>
+                    </div>
+                    <div class="footer-item">
+                        <p class="text-f">THÔNG TIN TUYỂN DỤNG</p>
+                        <p class="text-f">Làm Việc tại Pizza Hut</p>
+                        <p class="text-f">Môi Trường Làm Việc</p>
+                        <p class="text-f">Cơ Hội Nghề Nghiệp</p>
+                        <p class="text-f">CẦN SỰ HỖ TRỢ?</p>
+                        <p class="text-f">1900 1822</p>
+                    </div>
+                    <div class="footer-item">
+                        <p class="text-f">LIÊN HỆ VỚI PIZZA HUT</p>
+                        <p class="text-f">TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</p>
+                        <p class="text-f">QR Code App Pizzahut</p>
+                        <p class="text-f">App Store Pizzahut</p>
+                        <p class="text-f">Play Store Pizzahut</p>
+                    </div>
+                </div>
+                <div class="list-2">
+                    <div>Công ty TNHH Pizza Việt Nam
+        
+                        Số ĐKKD: 0303902751
+        
+                        Số 1-3-5 đường D2 Khu dân cư phức hợp sông Sài Gòn, số 92 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh,
+                        Thành phố Hồ Chí Minh, Việt Nam.</div>
+                    <div>
+                        Điều khoản & Điều kiện
+        
+                    </div>
+                </div>
+            </footer>
         </div>
+
     </div>
 </body>
+<script>
+    function closepage() {
+        document.getElementById("login").style.display = 'none';
+
+    }
+    function openpage() {
+        document.getElementById("login").style.display = 'flex';
+        console.log("test")
+    }
+    data1 = `
+    <input class="tab-input" placeholder="Vui lòng cho chúng tôi biết vị trí của bạn" style="width:80%;border-radius: 4px; border: 1px solid black;"/>
+    <i class="fa-regular fa-map fa-lg"></i>
+    `
+    data2 = `
+    <select style="width:40%; padding:7px">
+                <option>Thành phố</option>
+            </select>
+            
+            <select style="width:40%; padding:7px">
+                <option>Quận</option>
+            </select>
+    `
+    function change(signal){
+        if (signal){
+            document.getElementById("tab-content").innerHTML = data1;
+        }else{
+            document.getElementById("tab-content").innerHTML = data2;
+        }
+    }
+</script>
