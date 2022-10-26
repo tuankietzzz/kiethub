@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tab {
+    width: 1427.250px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 0.5px solid black;
+}
+.tab button {
+    width: 130px;
+    height: 48px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+}
+.tab button span {
+    color: gray;
+    font-size: 13.3333px;
+    font-weight: bolder;
+
+}
+.tabcontent {
+    background-color: rgb(164, 208, 247);
+    max-width: 1427.250px;
+    min-height: 800px;
+    display: none;
+    grid-template-columns: 701px 701px ;
+    gap: 10px;
+}
+.container-items {
+    width: 701.625px;
+    height: 398.75px;
+    overflow: hidden;
+    border-radius: 5px;
+    float: left;
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-top: 3px;
+}
+.container-items .image {
+    width: 702px;
+    height: 260px;
+    overflow: hidden;
+}
+.container-items img {
+    width: 701.625px;
+    height: 255.5px;
+    transform: scale(103%);
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+.items-bottom {
+    background-color: rgb(255, 255, 255);
+}
+.container-items .items-bottom .tag {
+    
+    padding: 0 6px;
+    height: 27.25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.container-items .items-bottom .tag .name {
+    font-size: 15px;
+    font-weight: bold;
+}
+.container-items .items-bottom .tag .new {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    background-color: #FFC800;
+}
+.container-items .items-bottom .info {
+    padding: 0 6px;
+    height: 60px;
+    font-size: 14px;
+}
+.container-items .items-bottom .price {
+    padding: 8px;
+    height: 44px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1px solid grey;
+}
+.container-items .items-bottom .price button {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: rgb(10, 128, 32);
+    height: 30px;
+    width: 114px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container-items:hover img {
+    transform: scale(120%);
+}
+.container-miniitems {
+    height: 400px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 3.5px;
+}
+.container-miniitems .image {
+    overflow: hidden;
+    cursor: pointer;
+}
+.container-miniitems, .container-miniitems .image, .container-miniitems img  {
+    width: 350px;
+    
+}
+.container-miniitems img {
+    transform: scale(103%);
+    transition: all 0.5s ease 0s;
+}
+.container-miniitems .items-bottom .tag {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.container-miniitems .items-bottom .tag .name {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.container-miniitems .items-bottom .tag .new {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    background-color: #FFC800;
+}
+.container-miniitems .items-bottom .info {
+    padding: 0 6px;
+    height: 60px;
+    font-size: 14px;
+}
+.container-miniitems .items-bottom .price {
+    padding: 5px;
+}
+.container-miniitems .items-bottom .price button {
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: rgb(10, 128, 32);
+    height: 30px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}    
+.tabminicontent {
+    background-color: rgb(164, 208, 247);
+    max-width: 1427.250px;
+    min-height: 800px;
+    display: none;
+    grid-template-columns: 351px 351px 351px 351px ;
+    gap: 5px;
+}
+.container-miniitems:hover img {
+    transform: scale(120%);
+}
+header {
+    display: flex;
+    position: relative;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    z-index: 2;
+}
+
+.header .header-1 {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.header .header-2    {
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 25px;
+}
+.header .header-3 {
+    display: flex;
+}
+.header .header-3 .member {
+    display: inline;
+    
+}
+.header .header-3 div button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: white;
+}
+.header .header-3 div button span {
+    color:red;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 20px;
+
+}
+.header .header-3 .member #alt {
+    color: white;
+    margin-right: 5px;
+    width: 1em;
+    height: 1em;
+    font-size: 1.2rem;
+    background-color: #cb1c3b;
+    border-radius: 50% ;
+    border: #cb1c3b 4px solid;
+
+}
+.header .header-3 .member div span {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.header .header-4 {
+    margin-right: 20px;
+}
+.header .header-4 button{
+    color: black;
+    align-items: center; 
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1.5;
+    border: 0;
+    background-color: white;
+}
+.header .header-4 button img {
+    width: 25px;
+    margin-right: 3px;
+}
+.header .header-4 button div span {
+    font-size: 8,075rem;
+}
+
+.login-dk {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    
+}
+
+.login-item-dk {
+    height: 100%;
+    display: grid;
+    place-content: center;
+
+}
+
+.login-img {
+    width: 480px;
+}
+
+.login-item {
+    display: flex;
+}
+
+.login-r {
+    width: 480px;
+    background-color: white;
+}
+.login-dk .login-item-dk .login-r .login-input {
+    display: block;
+    
+}
+
+.login-dk .login-item-dk .login-r .login-text h1 {
+    color: #A80000;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.login-dk .login-item-dk .login-r .login-text p {
+    text-align: center;
+}
+.login-dk .login-item-dk .login-r .login-input{
+    margin: 0px 48px;
+}
+.login-dk .login-item-dk .login-a {
+    display: flex;
+    margin-top: 20px;
+}
+.login-dk .login-item-dk .login-a .left{
+    margin-right: auto;
+    cursor: pointer;
+    
+}
+.login-dk .login-item-dk .login-a .right a{
+    color: rgb(10, 128, 32); 
+    text-decoration: none;
+}
+.login-dk .login-item-dk .login-btn{
+    color: white;
+    background-color: #0A8020;
+    border: 0;
+    font-size: 15px;
+    padding: 7px 90px;
+    margin: 0 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+.login-dk .login-item-dk span a{
+    text-decoration: none;
+    color:  rgb(10, 128, 32);
+}
+.login-dk .login-item-dk .login-item .login-r .close {
+    cursor: pointer;
+    float: right;
+    margin-right: -15px;
+    margin-top: -10px;
+}
